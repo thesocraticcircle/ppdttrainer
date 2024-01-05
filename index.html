@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Image Display Webapp</title>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/shelljs/0.8.5/shell.min.js" integrity="sha512-8fDxMV6cof1lE/sLTaixT/fJSAS4FYDNkOwY+jTLdPf3RBAYTvPqPaaS/ZrCtWj5F4re0Z4H+K0njqXS+tSskA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script>
+    window.onload = function() {
+      var command = 'python script.py';
+      var process = new ShellJS.ShellString(command); 
+      process.exec();
+    }
+  </script>
+
+</head>
+
+<body>
+
+  <h1>Image Display Webapp</h1>
+  
+  <p>This simple webapp runs a Python script to display images.</p>
+  
+  <p>The script is triggered on page load using ShellJS.</p>
+
+  <p>View page source to see the JavaScript code.</p>
+
+</body>
+
+</html>
